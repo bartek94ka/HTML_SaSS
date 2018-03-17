@@ -1,37 +1,406 @@
-<!doctype html>
-<html class="no-js" lang="">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title></title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+<!DOCTYPE html>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7"><![endif]-->
+<!--[if IE 7]><html class="no-js lt-ie9 lt-ie8"><![endif]-->
+<!--[if IE 8]><html class="no-js lt-ie9"><![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+<html lang="pl">
 
-        <link rel="manifest" href="site.webmanifest">
-        <link rel="apple-touch-icon" href="icon.png">
-        <!-- Place favicon.ico in the root directory -->
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Zielona Kraina</title>
+    <link href="./css/main/main.css" rel="stylesheet">
+    <script src=".\js\vendor\modernizr-2.8.3-respond-14.2.min.js"></script>
+    <meta name="theme-color" content="#ffffff">
+</head>
 
-        <link rel="stylesheet" href="css/normalize/normalize.css">
-        <link rel="stylesheet" href="css/main/main.css">
-    </head>
-    <body>
-        <!--[if lte IE 9]>
-            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
-        <![endif]-->
+<body>
 
-        <!-- Add your site or application content here -->
-        <p>Hello world! This is HTML5 Boilerplate.</p>
-        <script src="js/vendor/modernizr-3.5.0.min.js"></script>
-        <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.2.1.min.js"><\/script>')</script>
-        <script src="js/plugins.js"></script>
-        <script src="js/main.js"></script>
+    <!--[if lt IE 8]>
+<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade
+    your browser</a> to improve your experience.</p>
+<![endif]-->
 
-        <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
-        <script>
-            window.ga=function(){ga.q.push(arguments)};ga.q=[];ga.l=+new Date;
-            ga('create','UA-XXXXX-Y','auto');ga('send','pageview')
-        </script>
-        <script src="https://www.google-analytics.com/analytics.js" async defer></script>
-    </body>
+    <header id="header">
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="navbar-custom">
+                <div class="container">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-navbar-collapse" aria-expanded="false">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="/">
+                            <img src=".\img\menu_gorne_logo.png" alt="Logotyp Zielona Kraina">
+                        </a>
+                    </div>
+                    <div class="collapse navbar-collapse" id="main-navbar-collapse">
+                        <ul id="w3" class="nav navbar-nav">
+                            <li>
+                                <a href="#aktualnosci" data-scroll="">Aktualności</a>
+                            </li>
+                            <li>
+                                <a href="#zglos-szkole" data-scroll="">Zgłoś szkołę</a>
+                            </li>
+                            <li>
+                                <a href="#galeria" data-scroll="">Galeria</a>
+                            </li>
+                            <li>
+                                <a href="#przepisy" data-scroll="">Przepisy</a>
+                            </li>
+                            <li>
+                                <a href="#dla-rodzicow" data-scroll="">Dla rodziców</a>
+                            </li>
+                            <li>
+                                <a href="#dla-nauczycieli" data-scroll="">Dla nauczycieli</a>
+                            </li>
+                            <li>
+                                <a href="#organizatorzy" data-scroll="">Organizatorzy</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="white-to-transparent"></div>
+        </nav>
+    </header>
+
+    <!-- <div class="">
+    <div id="slider" style="position: relative; height: 600px;" class="vegas-container">
+        <div class="vegas-slide vegas-transition-blur vegas-transition-blur-in" style="transition: all 2000ms;">
+            <img src=".\img\background.png",class="center">
+        </div>
+    </div>
+    </div>
+    <img src=".\img\background.png" class="center"> -->
+
+    <section class="dark-green-bg">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <h2 class="section-title">TŁO PROJEKTU</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 text-center section-content pb2ds ">
+                    <p>
+                        W okresie wzrostu i rozwoju odpowiednio zbilansowana dieta ma kluczowy wpływ na rozwój i prawidłowe funkcjonowanie organizmu.
+                        Ważne, by wraz z jedzeniem dostarczać zarówno witaminy i składniki mineralne, jak i odpowiednią ilość
+                        energii (kalorii). Jak wynika z przeprowadzonych w 2013 r. badań Instytutu Żywności i Żywienia, nadmierną
+                        masę ciała ma obecnie ponad 1/5 dziewcząt i prawie 1/3 chłopców. Szczególnie niepokojąca jest dynamika
+                        przyrostu wagi polskich dzieci (najwyższa w Europie), obecność w ich żyłach blaszek miażdżycowych
+                        i zwiększone ryzyko rozwoju cukrzycy. Sytuacja taka jest następstwem zaburzenia podaży większości
+                        składników odżywczych.
+                    </p>
+                    <p>
+                        W nadmiarze konsumowane są przede wszystkim cukry proste (słodycze, soki, napoje, przetworzone produkty zbożowe) i tłuszcz
+                        pochodzenia zwierzęcego. W diecie brakuje natomiast odpowiedniej ilości błonnika pokarmowego, wielonienasyconych
+                        kwasów tłuszczowych i witamin.
+                    </p>
+                    <p>
+                        Prawidłowe żywienie w dzieciństwie pomaga cieszyć się zdrowiem w przyszłości, dlatego warto kształtować odpowie nawyki już
+                        od najmłodszych lat.
+                    </p>
+                    <p class="dark-green">
+                        <br>
+                    </p>
+                    <button type="button" data-toggle="collapse" data-target="#collapse-content_1"></button>
+                    <div id="collapse-content_1" class="collapse">
+                        <h4>Przebieg warsztatów</h4>
+                        <p>
+                            Szczególna uwaga uczestników zostanie zwrócona na zmniejszenie spożycia cukrów prostych, a także produktów pochodzenia zwierzęcego
+                            i sztucznie wzbogacanych. Program warsztatów został tak ułożony, by przekazać jego uczestnikom
+                            najbardziej przydatne informacje i porady, których stosowanie prowadzi do odniesienia korzyści
+                            ekologicznych, ekonomicznych, ale przede wszystkim, zdrowotnych. Udowodnione jest bowiem, że
+                            zwiększenie spożycia produktów roślinnych przy jednoczesnym ograniczeniu produktów pochodzenia
+                            zwierzęcego prowadzi do zmniejszenia ryzyka wystąpienia, a nawet cofania się skutków tzw. chorób
+                            cywilizacyjnych, m.in.: nadciśnienia, cukrzycy, otyłości, chorób układu krążenia i większości
+                            nowotworów.
+                        </p>
+                        <p>
+                            <br>
+                        </p>
+                        <div>
+                            <h4>Dlaczego warto?</h4>
+                        </div>
+                        <p>
+                            Zielona kraina to edukacja ze smakiem. Łączymy teorię z praktyką i robimy to w sposób interesujący dla młodego człowieka.
+                            Z naszych warsztatów dzieci dowiedzą się między innymi: jak jeść zdrowo i ze smakiem, w jaki
+                            sposób przygotować pyszne koktajle i sałatki na bazie świeżych, zielonych warzyw, dlaczego warto
+                            jeść różne kasze, uprawiać sport, być aktywnym fizycznie i sięgać po słodycze na bazie naturalnych
+                            składników, bez dodatku cukru.</div>
+                    </p>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <section id="aktualnosci" class="white-bg">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <h2 class="section-title dark-green-bg">
+                        Aktualności
+                    </h2>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-xs-12 section-content mt1ds mb3ds">
+                    <div id="w0" class="row row-height article-list">
+                        <div class="col-xs-12  col-md-8 col-md-offset-2 col-lg-offset-0 col-lg-6  col-height col-middle mb2ds" data-key="758">
+                            <div class="article-item inside inside-full-height" style="">
+                                <div class="content">
+                                    <div class="article-thumbnail col-xs-6">
+                                        <a href="">
+                                            <img class="img-thumbnail" src="./img/aktualnosci_1.png"
+                                                alt=""> </a>
+                                    </div>
+
+                                    <div class="article-content col-xs-6">
+                                        <h3 class="article-title">
+                                            <a href="/artykul/harmonogram-zajec-w-krakowie">Harmonogram zajęć w Krakowie</a>
+                                        </h3>
+                                        <div class="article-abstract">
+                                            Kraków to kolejne miasto w 2018 roku, do którego zawitają warsztaty „Zielona kraina. Edukacja ze sma... </div>
+                                        <a href="/artykul/harmonogram-zajec-w-krakowie">
+                                            <img src="img/aktualnosci_ptaszek.svg" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div class="article-oversign" style="position: absolute; top: 15px; right: 0px; width: 70%;">
+                                    <a href="/artykul/harmonogram-zajec-w-krakowie" title="Harmonogram zajęć w Krakowie">
+                                        <img src="img/aktualnosci_bohomaz.svg" alt="">
+                                    </a>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="col-xs-12  col-md-8 col-md-offset-2 col-lg-offset-0 col-lg-6  col-height col-middle mb2ds" data-key="715">
+                            <div class="article-item inside inside-full-height" style="">
+
+                                <div class="content">
+                                    <div class="article-thumbnail col-xs-6">
+
+                                        <a href="/artykul/harmonogram-zajec-w-kaliszu">
+                                            <img class="img-thumbnail" src="./img/aktualnosci_2.png"
+                                                alt=""> </a>
+                                    </div>
+
+                                    <div class="article-content col-xs-6">
+                                        <h3 class="article-title">
+                                            <a href="/artykul/harmonogram-zajec-w-kaliszu">Harmonogram zajęć w Kaliszu</a>
+                                        </h3>
+
+                                        <div class="article-abstract">
+                                            Pierwszym miastem w Nowym Roku 2018, do którego zawita Zielona Kraina jest Kalisz. Zapisy na warszta...
+                                        </div>
+                                        <a href="/artykul/harmonogram-zajec-w-kaliszu">
+                                            <img src="img/aktualnosci_ptaszek.svg" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div class="article-oversign" style="position: absolute; top: 15px; right: 0px; width: 70%;">
+                                    <a href="/artykul/harmonogram-zajec-w-kaliszu" title="Harmonogram zajęć w Kaliszu">
+                                        <img src="img/aktualnosci_bohomaz.svg" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-xs-12  col-md-8 col-md-offset-2 col-lg-offset-0 col-lg-6  col-height col-middle mb2ds" data-key="758">
+                            <div class="article-item inside inside-full-height">
+                                <div class="content">
+                                    <div class="article-content col-xs-6">
+                                        <h3 class="article-title">
+                                            <a href="/artykul/harmonogram-zajec-w-krakowie">Harmonogram zajęć w Krakowie</a>
+                                        </h3>
+                                        <div class="article-abstract">
+                                            Kraków to kolejne miasto w 2018 roku, do którego zawitają warsztaty „Zielona kraina. Edukacja ze sma... </div>
+                                        <a href="/artykul/harmonogram-zajec-w-krakowie">
+                                            <img src="img/aktualnosci_ptaszek.svg" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="article-thumbnail col-xs-6">
+                                        <a href="/artykul/harmonogram-zajec-w-krakowie">
+                                            <img class="img-thumbnail" src="./img/aktualnosci_3.png"
+                                                alt=""> </a>
+                                    </div>
+                                </div>
+
+                                <div class="article-oversign" style="position: absolute; top: 15px; right: 0px; width: 70%;">
+                                    <a href="/artykul/harmonogram-zajec-w-krakowie" title="Harmonogram zajęć w Krakowie">
+                                        <img src="img/aktualnosci_bohomaz.svg" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-xs-12  col-md-8 col-md-offset-2 col-lg-offset-0 col-lg-6  col-height col-middle mb2ds" data-key="758">
+                            <div class="article-item inside inside-full-height">
+                                <div class="content">
+                                    <div class="article-content col-xs-6">
+                                        <h3 class="article-title">
+                                            <a href="/artykul/harmonogram-zajec-w-krakowie">Harmonogram zajęć w Krakowie</a>
+                                        </h3>
+                                        <div class="article-abstract">
+                                            Kraków to kolejne miasto w 2018 roku, do którego zawitają warsztaty „Zielona kraina. Edukacja ze sma... </div>
+                                        <a href="/artykul/harmonogram-zajec-w-krakowie">
+                                            <img src="img/aktualnosci_ptaszek.svg" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="article-thumbnail col-xs-6">
+                                        <a href="/artykul/harmonogram-zajec-w-krakowie">
+                                            <img class="img-thumbnail" src="./img/aktualnosci_3.png"
+                                                alt=""> </a>
+                                    </div>
+                                </div>
+
+                                <div class="article-oversign" style="position: absolute; top: 15px; right: 0px; width: 70%;">
+                                    <a href="/artykul/harmonogram-zajec-w-krakowie" title="Harmonogram zajęć w Krakowie">
+                                        <img src="img/aktualnosci_bohomaz.svg" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        
+                    </div>
+                    <button type="button" data-toggle="collapse" data-target="#collapse-content_2"></button>
+                    <div id="collapse-content_2" class="collapse">
+                        <div class="col-xs-12  col-md-8 col-md-offset-2 col-lg-offset-0 col-lg-6  col-height col-middle mb2ds" data-key="758"> -->
+                                <div class="article-item inside inside-full-height">
+                                    <div class="content">
+                                        <div class="article-thumbnail col-xs-6">
+                                            <a href="">
+                                                <img class="img-thumbnail" src="./img/aktualnosci_1.png"
+                                                    alt=""> </a>
+                                        </div>
+    
+                                        <div class="article-content col-xs-6">
+                                            <h3 class="article-title">
+                                                <a href="/artykul/harmonogram-zajec-w-krakowie">Harmonogram zajęć w Krakowie</a>
+                                            </h3>
+                                            <div class="article-abstract">
+                                                Kraków to kolejne miasto w 2018 roku, do którego zawitają warsztaty „Zielona kraina. Edukacja ze sma... </div>
+                                            <a href="/artykul/harmonogram-zajec-w-krakowie">
+                                                <img src="img/aktualnosci_ptaszek.svg" alt="">
+                                            </a>
+                                        </div>
+                                    </div>
+    
+                                    <div class="article-oversign" style="position: absolute; top: 15px; right: 0px; width: 70%;">
+                                        <a href="/artykul/harmonogram-zajec-w-krakowie" title="Harmonogram zajęć w Krakowie">
+                                            <img src="img/aktualnosci_bohomaz.svg" alt="">
+                                        </a>
+                                    </div>
+    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="profil_warsztatow">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <h2 class="section-title dark-green-bg">PROFIL WARSZTATÓW</h2>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-10 col-lg-offset-1 col-xs-12 section-content">
+                    <dl class="dl-horizontal">
+                        <dt>Cel:</dt>
+                        <dd>promocja prawidłowych postaw żywieniowych zgodnych z wytycznymi IŻŻ.</dd>
+                        <dt>Grupa docelowa:</dt>
+                        <dd>uczniowie klas IV szkół podstawowych, które zgłoszą się do udziału w warsztatach. Wszystkie klasy
+                            IV w danej szkole, która przystąpi do programu są objęte warsztatami.</dd>
+                        <dt>Czas trwania projektu:</dt>
+                        <dd>wrzesień 2017 r. – czerwiec 2018 r.</dd>
+                        <dt>Zakres:</dt>
+                        <dd>400 warsztatów w miastach: Łódź, Lublin, Kalisz, Kraków, Katowice/Sosnowiec/Dąbrowa Górnicza. Liczba
+                            miejsc jest ograniczona – decyduje kolejność zgłoszeń.</dd>
+                        <dt>Forma:</dt>
+                        <dd>dwugodzinne (90 min.) warsztaty kulinarne – informowanie o zaletach bogatego w składniki odżywcze
+                            jedzenia podczas wspólnego przygotowywania zdrowych posiłków.</dd>
+                        <dt>Koszt:</dt>
+                        <dd>warsztaty Zielona Kraina
+                            <strong>są bezpłatne!</strong>
+                        </dd>
+                        <dt>Prowadzący:</dt>
+                        <dd>osoby posiadające wiedzę w dziedzinie odżywiania, przygotowywania posiłków, z doświadczeniem pedagogicznym:
+                            m.in. dietetycy pracujący w Instytucie Żywności i Żywienia, kucharze prowadzący kulinarne programy
+                            szkoleniowe finansowane ze środków Unii Europejskiej.</dd>
+                        <dt>Harmonogram:</dt>
+                        <dd>
+                            <div>
+                                <strong>Łódź</strong>: 2 połowa września, październik, 1 połowa listopada, liczba klas objętych programem:
+                                <strong>120</strong>
+                                <br>
+                                <strong>Lublin</strong>: 2 połowa listopada, grudzień, liczba klas objętych programem:
+                                <strong>50</strong>
+                                <br>
+                                <strong>Kalisz</strong>: styczeń, liczba klas objętych programem w mieście:
+                                <strong>30</strong>
+                                <br>
+                                <strong>Kraków</strong>: luty – marzec, liczba klas objętych programem:
+                                <strong>100</strong>
+                                <br>
+                                <strong>Katowice/Sosnowiec/Dąbrowa Górnicza</strong>: kwiecień – czerwiec, liczba klas objętych programem:
+                                <strong>100</strong>
+                            </div>
+                        </dd>
+                        <dt>Zgłoszenie/Regulamin:</dt>
+                        <dd>
+                            <a href="">Do pobrania tutaj</a>
+                        </dd>
+                        <dt>Kontakt:</dt>
+                        <dd>
+                            <a href="">warsztaty@zielona-kraina.com
+                                <br>
+                            </a>
+                        </dd>
+                    </dl>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="./assets/43b6a118/jquery.js?v=1520890780"></script>
+    <script src="./assets/742b4108/yii.js?v=1520890780"></script>
+    <!--[if lt IE 9]>
+<script src="/assets/f7cd5f6b/dist/html5shiv.min.js?v=1520890780"></script>
+<![endif]-->
+    <script src="./js/vendor/smooth-scroll.min.js?v=1441100357"></script>
+    <script src="./js/vendor/jquery.mousewheel.min.js?v=1389021148"></script>
+    <script src="./js/vendor/jquery.touchSwipe.min.js?v=1389018688"></script>
+    <script src="./js/vendor/vegas.min.js?v=1444123700"></script>
+    <script src="./bundle/bootstrap.min.js?v=1457884436"></script>
+    <script src="./bundle/index.js?v=1462293618"></script>
+    <script type="text/javascript">jQuery(document).ready(function () {
+
+            $('#slider').vegas({
+                slides: [{ "src": ".\img\background.png" }],
+                timer: false,
+                shuffle: false,
+                delay: 10000,
+                transitionDuration: 2000,
+                transition: ["fade", "blur", "flash"]
+            });
+
+        });</script>
+</body>
+
 </html>
