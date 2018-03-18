@@ -81,6 +81,7 @@ sub {
 
 img {
   border: 0;
+  width: 100%;
 }
 
 svg:not(:root) {
@@ -139,31 +140,14 @@ button::-moz-focus-inner {
   padding: 0;
 }
 
-input {
-  line-height: normal;
-}
-
-input::-moz-focus-inner {
-  border: 0;
-  padding: 0;
-}
-
-input[type="checkbox"], input[type="radio"] {
-  box-sizing: border-box;
-  padding: 0;
-}
-
-input[type="number"]::-webkit-inner-spin-button, input[type="number"]::-webkit-outer-spin-button {
-  height: auto;
-}
-
-input[type="search"] {
-  -webkit-appearance: textfield;
-  box-sizing: content-box;
-}
-
-input[type="search"]::-webkit-search-cancel-button, input[type="search"]::-webkit-search-decoration {
-  -webkit-appearance: none;
+.button-collapse {
+  background: transparent;
+  border: 3px transparent;
+  background-image: url("../../img/button_collaps.png");
+  height: 45px;
+  width: 45px;
+  background-repeat: no-repeat;
+  display: none;
 }
 
 fieldset {
@@ -8277,7 +8261,7 @@ dd {
 }
 
 .light-grey-bg {
-  background: #ebebeb;
+  background: #dfdfdf63;
 }
 
 .light-grey {
@@ -8723,7 +8707,6 @@ strong, dt {
 }
 
 .percent-20-box {
-  margin-top: 1.2em;
   width: 20%;
   display: inline-block;
   vertical-align: bottom;
@@ -8740,8 +8723,13 @@ strong, dt {
   white-space: nowrap;
 }
 
+.percent-20-box img {
+  width: 50%;
+}
+
 .percent-20-box:hover div {
-  color: #82bc00;
+  color: #000000;
+  font-weight: bold;
 }
 
 @media only screen and (max-width: 767px) {
@@ -8766,6 +8754,19 @@ strong, dt {
   #slider {
     height: 310px;
   }
+}
+
+.recipe-background-image {
+  height: 500px;
+  width: 100vw;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-size: cover;
+  background-color: #9ada25;
+  background-image: url("../../img/przepisy_background.jpg");
+  background-blend-mode: multiply;
 }
 
 .gallery-item {
@@ -8803,16 +8804,13 @@ strong, dt {
   transition: opacity 750ms;
 }
 
-.for-parents-item .for-parents-item-thumbnail {
-  margin-bottom: 1em;
-}
-
-.for-parents-item .for-parents-item-title .grey-link {
-  color: #5d5b5c;
-}
-
-.for-parents-item .for-parents-item-title .grey-link:hover {
-  color: #82bc00 !important;
+.for-parents-item {
+  height: 20px;
+  weight: 40px;
+  border: 20px solid transparent;
+  padding: 15px;
+  border-image: url("../../img/cross.png");
+  border-image-width: 35px;
 }
 
 .article-item .article-content {
