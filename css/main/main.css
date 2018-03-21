@@ -143,7 +143,7 @@ button::-moz-focus-inner {
 .button-collapse {
   background: transparent;
   border: 3px transparent;
-  background-image: url("../../img/button_collaps.png");
+  background-image: url("../../img/aktualnosci_ptaszek.svg");
   height: 45px;
   width: 45px;
   background-repeat: no-repeat;
@@ -1356,8 +1356,13 @@ img {
 }
 
 .img-responsive {
-  display: block;
+  display: inline block;
   max-width: 100%;
+}
+
+.img-leaf {
+  display: block;
+  max-width: 10%;
   height: auto;
 }
 
@@ -8380,12 +8385,11 @@ dd {
 
 .section-title {
   font-family: 'djb_chalk_it_upregular';
-  margin: 1em 0;
+  margin: 1em 0em 1em 0em;
   text-align: center;
   color: green;
-  height: 110px;
+  height: auto;
   line-height: 100px;
-  padding-top: 10px;
   font-size: 48px;
 }
 
@@ -8397,20 +8401,12 @@ dd {
   text-decoration: none;
 }
 
-.section-title.dark-green-bg {
-  background: url("../img/naglowek_ciemny.svg") no-repeat center;
-}
-
 .section-title.dark-green-bg a {
   color: white !important;
 }
 
 .section-title.dark-green-bg a:hover {
   color: #e6e6e6 !important;
-}
-
-.section-title.light-green-bg {
-  background: url("../img/naglowek_jasny.svg") no-repeat center;
 }
 
 .section-title.light-green-bg a {
@@ -8422,7 +8418,6 @@ dd {
 }
 
 .section-title.white-bg {
-  background: url("../img/naglowek_bialy.svg") no-repeat center;
   color: #007d32;
 }
 
@@ -8506,7 +8501,7 @@ strong, dt {
 }
 
 #header nav {
-  background: white;
+  background: url("./img/menu_gorne_pasek.svg");
 }
 
 #header .collapse {
@@ -8595,25 +8590,6 @@ strong, dt {
   font-weight: bold;
   padding: 15px 8px 15px 13px;
   text-align: center;
-}
-
-#header .navbar-social {
-  background: white;
-}
-
-#header .navbar-social .social-links {
-  padding-right: 3em;
-  padding-top: 5px;
-}
-
-#header .navbar-social a {
-  color: #007d32;
-}
-
-#header .navbar-social a:hover {
-  cursor: pointer;
-  color: #82bc00;
-  text-decoration: none;
 }
 
 @media only screen and (max-width: 767px) {
@@ -8806,7 +8782,6 @@ strong, dt {
 
 .for-parents-item {
   height: 20px;
-  weight: 40px;
   border: 20px solid transparent;
   padding: 15px;
   border-image: url("../../img/cross.png");
