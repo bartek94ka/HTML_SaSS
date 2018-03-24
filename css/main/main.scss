@@ -80,7 +80,6 @@ html {
   
   img {
     border: 0;
-    width: 100%;
   }
   
   svg:not(:root) {
@@ -143,13 +142,13 @@ html {
 
   .button-collapse{
     background: transparent;
-    border: 3px transparent;
-    // background-image: url('../../img/button_collaps.png');
-    background-image: url('../../img/aktualnosci_ptaszek.svg');
+    border: transparent;
+    // background: tr;
     height: 45px; 
     width: 45px;   
+    background-size: contain;
     background-repeat:no-repeat;
-    display: none;
+    display: block;
   }
   
   fieldset {
@@ -1378,8 +1377,7 @@ html {
   .img-thumbnail {
     padding: 24px;
     line-height: 1.42857;
-    background-color: #fff;
-    border: 1px solid #ddd;
+    border: 1px solid #66ff66;
     border-radius: 4px;
     -webkit-transition: all 0.2s ease-in-out;
     -o-transition: all 0.2s ease-in-out;
@@ -3137,7 +3135,7 @@ html {
     min-height: 0.01%;
   }
   
-  @media screen and (max-width: 767px) {
+  @media only screen and (max-width: 767px) {
     .table-responsive {
       width: 100%;
       margin-bottom: 15px;
@@ -3339,7 +3337,7 @@ html {
     -webkit-appearance: none;
   }
   
-  @media screen and (-webkit-min-device-pixel-ratio: 0) {
+  @media only screen and (-webkit-min-device-pixel-ratio: 0) {
     input {
       &[type="date"].form-control, &[type="time"].form-control, &[type="datetime-local"].form-control, &[type="month"].form-control {
         line-height: 34px;
@@ -6503,7 +6501,7 @@ html {
     max-width: 100%;
   }
   
-  @media screen and (min-width: 768px) {
+  @media only screen and (min-width: 768px) {
     .jumbotron {
       padding-top: 48px;
       padding-bottom: 48px;
@@ -8288,7 +8286,7 @@ html {
     }
   }
   
-  @media screen and (min-width: 768px) {
+  @media only screen and (min-width: 768px) {
     .carousel-control {
       .glyphicon-chevron-left, .glyphicon-chevron-right, .icon-prev, .icon-next {
         width: 30px;
@@ -8827,6 +8825,10 @@ html {
   .section-end {
     padding: 1em 0;
   }
+
+  section{
+    margin-bottom: 2em;
+  }
   
   #header {
     background: white;
@@ -8838,8 +8840,7 @@ html {
   }
   
   strong, dt {
-    font-weight: normal;
-    font-family: 'AvenirLTPro-Heavy';
+    font-weight: bold;
   }
   
   .dl-horizontal {
@@ -8868,7 +8869,8 @@ html {
   
   #header {
     nav {
-      background: url("./img/menu_gorne_pasek.svg");
+      // background: none;
+      // background: url("../img/menu_gorne_pasek.svg") no-repeat 100px 25px;
     }
     .collapse {
       padding-top: 0px;
@@ -8887,8 +8889,9 @@ html {
     .navbar-custom {
       background: white;
       > .container {
-        background: url("../img/menu_gorne_pasek.svg") no-repeat 100px 25px;
+        background: url("../../img/menu_gorne_pasek.svg") no-repeat 100px 25px;
       }
+      
     }
     .navbar-default {
       border: none;
@@ -9066,7 +9069,7 @@ html {
   
   #slider {
     height: 600px;
-    overflow: hidden;
+    overflow: visible;
   }
   
   @media only screen and (max-width: 767px) {
@@ -9159,4 +9162,48 @@ html {
       text-align: left;
       padding-bottom: 15px;
     }
+  }
+
+  .organizer-group{
+    display:flex;
+    align-items: center;
+  }
+
+  .organizer-image{
+    display: block; 
+    margin-left: auto; 
+    margin-right: auto;
+  }
+
+  
+  .organizer-image-left{
+    display: block; 
+    margin-left: auto; 
+    margin-right: 10px;
+  }
+  .organizer-image-right{
+    display: block; 
+    margin-left: 10px; 
+    margin-right: auto;
+  }
+  .main-background-image{
+    width: 100%;
+    height: 400px;
+    background-image: url('../../img/background.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .border-section-image{
+    height: 40px;
+    width: 100%;
+    background-image: url('../../img/border_section.png');
+    background-size: cover;
+  }
+  .section-title-background{
+    height: 40px;
+    width: 100%;
+    background-image: url('../../img/border_section.png');
+    background-size: cover;
+    -webkit-filter: invert(1);
+    filter: invert(1);
   }
