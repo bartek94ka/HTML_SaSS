@@ -9131,14 +9131,48 @@ html {
   }
   
   .for-parents-item {
+    text-align: center;
     height: 20px;
-    // weight: 40px;
+    weight: 40px;
     border: 20px solid transparent;
     padding: 15px;
     border-image: url('../../img/cross.png');
     border-image-width: 35px;
-
   }
+
+  .for-parents-item-left-top {
+    height: 40px;
+    weight: 40px;
+    border: 20px solid transparent;
+    padding: 15px;
+    padding-bottom: 20px;
+    background-image: url('../../img/cross.png'); 
+    // background-position-y: -25px;
+    background-repeat: no-repeat;
+    .inner-div{
+      text-align: left;
+      word-wrap: break-word;
+      text-transform: uppercase;
+      margin-top: 40px;
+      padding-left: 40px;
+    }
+  }
+
+  .table-bordered div {
+    text-align: center;
+    padding:10px;
+    border-color: transparent;
+    border-style: solid;
+    border-width: 27px;
+    -moz-border-image: url('../../img/cross.png') 27 repeat;
+    -webkit-border-image: url('../../img/cross.png') 27 repeat;
+    -o-border-image: url('../../img/cross.png') 27 repeat;
+    border-image: url('../../img/cross.png') 27 fill repeat;
+  }
+
+  .table-bordered * {
+    border: 0;
+}
   
   .article-item .article-content {
     padding: 25px 40px 25px 50px;
@@ -9206,4 +9240,23 @@ html {
     background-size: cover;
     -webkit-filter: invert(1);
     filter: invert(1);
+  }
+
+  #myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: rgb(42, 126, 53);
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 4px;
+    &:hover{
+      background-color: rgb(101, 196, 93);
+    }
   }

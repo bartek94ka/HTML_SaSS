@@ -63,6 +63,8 @@
         </nav>
     </header>
 
+    <a href="" data-scroll=""><button id="myBtn">Do góry</button></a>
+
     <div class="">
         <div id="slider" style="position: relative; height: auto;" class="vegas-container">
             <div class="vegas-slide vegas-transition-blur vegas-transition-blur-in">
@@ -446,41 +448,36 @@
             <div class="row">
                 <div class="col-xs-12">
                     <h2 class="section-title light-green-bg">
-                        <img src=".\img\lisc.png" , class="img-leaf center-block"> DLA RODZICÓW
+                        <img src=".\img\lisc.png" , class="img-leaf center-block"> 
+                        <div>DLA RODZICÓW</div>
                     </h2>
                 </div>
             </div>
-            <div class="row mt1ds mb2ds">
-                <div class="col-lg-10 col-lg-offset-1 col-md-offset-0 col-md-12 col-sm-12 col-xs-12 section-content">
-                    <div id="w1" class="row row-height ">
-                        <div class="col-md-4 col-xs-6">
-                            <div class="for-parents-item" style="text-align: center">WPŁYW ŻYWIENIA NA ZDROWIE</div>
-                        </div>
-                        <div class="col-md-4 col-xs-6">
-                            <div class="for-parents-item" style="text-align: center">NAJISTOTNIEJSZE SKŁADNIKI W DIECIE DZIECKA</div>
-                        </div>
-                        <div class="col-md-4 col-xs-6">
-                            <div class="for-parents-item" style="text-align: center">JAK POSTĘPOWAĆ Z NIEJADKIEM</div>
-                        </div>
-                        <div class="col-md-4 col-xs-6 col-height col-middle">
-                            <div class="for-parents-item" style="text-align: center">JAK POSTĘPOWAĆ Z NIEJADKIEM</div>
-                        </div>
-                        <div class="col-md-4 col-xs-6 col-height col-middle">
-                            <div class="for-parents-item" style="text-align: center">JAK POSTĘPOWAĆ Z NIEJADKIEM</div>
-                        </div>
-                        <div class="col-md-4 col-xs-6 col-height col-middle mb2ds ">
-                            <div class="for-parents-item" style="text-align: center">JAK POSTĘPOWAĆ Z NIEJADKIEM</div>
-                        </div>
-                        <div class="col-md-4 col-xs-6 col-height col-middle mb2ds ">
-                            <div class="for-parents-item" style="text-align: center">JAK POSTĘPOWAĆ Z NIEJADKIEM</div>
-                        </div>
-                        <div class="col-md-4 col-xs-6 col-height col-middle mb2ds ">
-                            <div class="for-parents-item" style="text-align: center">JAK POSTĘPOWAĆ Z NIEJADKIEM</div>
-                        </div>
-                        <div class="col-md-4 col-xs-6 col-height col-middle mb2ds ">
-                            <div class="for-parents-item" style="text-align: center">JAK POSTĘPOWAĆ Z NIEJADKIEM</div>
-                        </div>
+            
+            <div class="row">
+                <div class="for-parents-item-left-top col-md-4 col-xs-6">
+                    <div class="inner-div">
+                        aaa
                     </div>
+                </div>
+                <div class="for-parents-item-left-top col-md-4 col-xs-6">
+                    <div class="inner-div">
+                        asdsafsdfsfasdfdsfa afdsflkdj dfakdsjfds skdafjds sadfkj sdafkjsd sadf kj sdfjkd
+                    </div>
+                </div>
+                <div class="for-parents-item-left-top col-md-4 col-xs-6">
+                    <div class="inner-div">
+                        <a>ccc</a>
+                    </div>
+                </div>
+                <div class="for-parents-item-left-top col-md-4 col-xs-6">
+
+                </div>
+                <div class="for-parents-item-left-top col-md-4 col-xs-6">
+
+                </div>
+                <div class="for-parents-item-left-top col-md-4 col-xs-6">
+
                 </div>
             </div>
             <img src=".\img\lisc_dol.png" , class="img-leaf center-block">
@@ -565,6 +562,18 @@
             });
 
         });
+    </script>
+    <script type="text/javascript">
+            // When the user scrolls down 20px from the top of the document, show the button
+            window.onscroll = function() {scrollFunction()};
+            
+            function scrollFunction() {
+                if (document.body.scrollTop > 150 || document.documentElement.scrollTop > 150) {
+                    document.getElementById("myBtn").style.display = "block";
+                } else {
+                    document.getElementById("myBtn").style.display = "none";
+                }
+            }
     </script>
 </body>
 
