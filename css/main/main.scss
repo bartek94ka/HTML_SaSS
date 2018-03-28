@@ -8834,11 +8834,6 @@ html {
     background: white;
   }
   
-  #footer .logotypes {
-    background: url("../img/stopka_zintegrowana_z_logotypami.svg") no-repeat center;
-    height: 142px;
-  }
-  
   strong, dt {
     font-weight: bold;
   }
@@ -9259,4 +9254,12 @@ html {
     &:hover{
       background-color: rgb(101, 196, 93);
     }
+  }
+
+  .footer-image{
+    width: 40%; 
+    display: block; 
+    margin-left:auto; 
+    margin-right:auto;
+    background-image: url('../../img/stopka_zintegrowana_z_logotypami.svg')
   }

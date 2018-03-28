@@ -8469,11 +8469,6 @@ section {
   background: white;
 }
 
-#footer .logotypes {
-  background: url("../img/stopka_zintegrowana_z_logotypami.svg") no-repeat center;
-  height: 142px;
-}
-
 strong, dt {
   font-weight: bold;
 }
@@ -8914,5 +8909,13 @@ strong, dt {
 
 #myBtn:hover {
   background-color: #65c45d;
+}
+
+.footer-image {
+  width: 40%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: url("../../img/stopka_zintegrowana_z_logotypami.svg");
 }
 /*# sourceMappingURL=main.css.map */
