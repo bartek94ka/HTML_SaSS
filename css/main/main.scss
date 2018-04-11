@@ -1,8 +1,8 @@
-html {
-    font-family: sans-serif;
-    -ms-text-size-adjust: 100%;
-    -webkit-text-size-adjust: 100%;
-  }
+  html {
+      font-family: sans-serif;
+      -ms-text-size-adjust: 100%;
+      -webkit-text-size-adjust: 100%;
+    }
 
   * {
     -webkit-box-sizing: border-box;
@@ -30,6 +30,13 @@ html {
       outline-offset: -2px;
     }
   }
+
+  p{
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    text-indent: 1.5em;
+  }
   
   .img-responsive {
     display: inline block;
@@ -47,6 +54,21 @@ html {
     display: inline-block;
     max-width: 100%;
     height: auto;
+  }
+
+  .img-tilt {
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+      -o-transition: all 0.5s ease;
+      -ms-transition: all 0.5s ease;
+          transition: all 0.5s ease;
+    &:hover{
+      -webkit-transform: rotate(-10deg);
+          -moz-transform: rotate(-10deg);
+            -o-transform: rotate(-10deg);
+          -ms-transform: rotate(-10deg);
+              transform: rotate(-10deg);
+    }
   }
   
   .sr-only {
@@ -893,6 +915,23 @@ html {
       width: 200px;
     }
   }
+
+  @media (min-width: 850px) {
+    .dl-horizontal {
+      dt {
+        float: left;
+        width: 160px;
+        clear: left;
+        text-align: right;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+      }
+      dd {
+        margin-left: 180px;
+      }
+    }
+  }
   
   @media only screen and (max-width: 767px) {
     .dl-horizontal dd {
@@ -1195,6 +1234,11 @@ html {
       text-align: left;
       padding-bottom: 15px;
     }
+    a{
+      img {
+        float:left;
+      }
+    }
   }
 
   .organizer-group{
@@ -1274,4 +1318,8 @@ html {
     display: table;
     margin-right: auto;
     margin-left: auto;
+  }
+
+  .img-leaf{
+    margin-top: 50px;
   }

@@ -34,6 +34,13 @@ a:focus {
   outline-offset: -2px;
 }
 
+p {
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  text-indent: 1.5em;
+}
+
 .img-responsive {
   display: inline block;
   max-width: 100%;
@@ -50,6 +57,22 @@ a:focus {
   display: inline-block;
   max-width: 100%;
   height: auto;
+}
+
+.img-tilt {
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.img-tilt:hover {
+  -webkit-transform: rotate(-10deg);
+  -moz-transform: rotate(-10deg);
+  -o-transform: rotate(-10deg);
+  -ms-transform: rotate(-10deg);
+  transform: rotate(-10deg);
 }
 
 .sr-only {
@@ -915,6 +938,21 @@ strong, dt {
   width: 200px;
 }
 
+@media (min-width: 850px) {
+  .dl-horizontal dt {
+    float: left;
+    width: 160px;
+    clear: left;
+    text-align: right;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  .dl-horizontal dd {
+    margin-left: 180px;
+  }
+}
+
 @media only screen and (max-width: 767px) {
   .dl-horizontal dd {
     margin-left: 0px;
@@ -1238,6 +1276,10 @@ strong, dt {
   padding-bottom: 15px;
 }
 
+.article-item .article-content a img {
+  float: left;
+}
+
 .organizer-group {
   display: flex;
   align-items: center;
@@ -1316,5 +1358,9 @@ strong, dt {
   display: table;
   margin-right: auto;
   margin-left: auto;
+}
+
+.img-leaf {
+  margin-top: 50px;
 }
 /*# sourceMappingURL=main.css.map */
